@@ -1,0 +1,8 @@
+Update 1.4.16
+- Pernambahan umur pada menu mass input
+- Peningkatan performa saat mengakses menu mass input
+- Perbaikan tab blocked terkadang tidak muncul
+
+info lebih lanjut cek menu informasi FMDC
+
+FMDC Team

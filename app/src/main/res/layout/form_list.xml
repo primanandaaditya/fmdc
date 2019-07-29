@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/form_list">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/FeedCd"
+        android:layout_weight="0.25" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFeed"
+        android:layout_weight=".35"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:textAlignment="textEnd"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="karung"
+        android:id="@+id/textView26"
+        android:layout_weight=".25"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/btnDetach"
+        android:layout_weight=".1"
+        android:layout_margin="2dp"
+        android:onClick="onDeleteClicked" />
+</LinearLayout>

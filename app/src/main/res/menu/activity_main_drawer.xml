@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_phone_android_black_24dp"
+            android:title="Site Survey" />
+        <item
+            android:id="@+id/nav_messinput"
+            android:icon="@drawable/ic_massinput"
+            android:title="Mass Input" />
+        <item
+            android:id="@+id/nav_farmer"
+            android:icon="@drawable/marker"
+            android:title="@string/nav_farmer" />
+        <item
+            android:id="@+id/nav_mytag"
+            android:icon="@drawable/mytag"
+            android:title="@string/nav_mytag" />
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="@string/nav_sinkronisasi" />
+        <item
+            android:id="@+id/nav_monitoring"
+            android:icon="@drawable/monitoring"
+            android:title="@string/nav_monitoring" />
+
+        <item
+            android:id="@+id/nav_approve"
+            android:icon="@drawable/ic_approve"
+            android:title="@string/nav_approve" />
+
+
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:title="Informasi" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="About Us" />
+    </group>
+
+    <!--<item android:title="Other">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about_us"-->
+                <!--android:title="@string/nav_about_us" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_privacy_policy"-->
+                <!--android:title="@string/privacy_policy" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

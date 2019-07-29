@@ -1,0 +1,249 @@
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="false"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:background="@color/btn_login_bg"
+    android:layout_margin="5dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/button_material_light"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="10dp"
+    tools:context="id.co.cp.mdc.fragments.OneFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:src="@drawable/farmer"
+            android:layout_weight=".15"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"/>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerFarmer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/address"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15"
+            android:textSize="4dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerAddress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/marker"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip">
+            <TextView
+                android:id="@+id/lblLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp" />
+            <TextView
+                android:id="@+id/lblLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tgl Doc In"
+            android:id="@+id/textView11"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zTxtDate1"
+            android:singleLine="true"
+            android:inputType="date"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_weight=".15" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:id="@+id/zbtnDate"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Populasi"
+            android:id="@+id/textView2"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ztxtDoc"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_weight=".15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_weight=".1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ekor"
+            android:id="@+id/textView5"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Toleransi"
+            android:id="@+id/textView10"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ztxtToler"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGetToler"
+            android:text="1%"
+            android:layout_margin="5dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ekor"
+            android:id="@+id/textView9"
+            android:layout_weight=".15" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nb : Toleransi secara default akan terisi 1%. Silahkan ubah angka di kolom toleransi jika ingin mengubahnya"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_vertical">
+
+        <Button
+            android:id="@+id/btnSaveDoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/bg_main"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

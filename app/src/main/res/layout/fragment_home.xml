@@ -1,0 +1,409 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context="id.co.cp.mdc.fragments.OneFragment"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp">
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:layout_weight="0.3"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:src="@drawable/farmer"
+            android:id="@+id/img_profile"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="2dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_below="@id/img_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vincent Kusuma"
+            android:textStyle="normal|bold"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:id="@+id/ztxtName"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/rl_profile"
+        android:id="@+id/rl_detailprof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/zVrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:background="@color/colorAccent"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_detProfEmail"
+            android:layout_below="@id/zVrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" >
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_margin="3dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/ztxtEmail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detProfArea"
+            android:layout_below="@+id/rl_detProfEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" >
+            <TextView
+                android:id="@+id/textAreaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_margin="3dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:layout_marginLeft="50dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12dp"
+                android:id="@+id/zTxtAreaId" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detProfBranch"
+            android:layout_below="@+id/rl_detProfArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/zTextBrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Branch"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/zTxtBrcId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detProfTs"
+            android:layout_below="@id/rl_detProfBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TS ID"
+                android:textSize="12dp"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:id="@+id/zTextTs"
+                android:layout_margin="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/zTxtTsId" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--baru sampe sini!!!!!!!!!-->
+    <RelativeLayout
+        android:id="@+id/rl_myActivity"
+        android:layout_below="@id/rl_detailprof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:elevation="2dp">
+        <TextView
+            android:id="@+id/tekstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Activity"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:background="@color/colorAccent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_below="@id/tekstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_ayam"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOC/SPPA/Stok"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginVertical="3dp"/>
+            <TextView
+                android:id="@+id/docsppastok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_below="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_feed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed S00"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginVertical="3dp"/>
+            <TextView
+                android:id="@+id/s00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll3"
+            android:layout_below="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_feed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed S10"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginVertical="3dp"/>
+
+            <TextView
+                android:id="@+id/s10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll4"
+            android:layout_below="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_feed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed S11"
+                android:textSize="12dp"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:layout_marginLeft="28dp"
+                android:layout_marginVertical="3dp" />
+
+            <TextView
+                android:id="@+id/s11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll5"
+            android:layout_below="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_feed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feed S12"
+                android:textSize="12dp"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:layout_marginLeft="28dp"
+                android:layout_marginVertical="3dp" />
+
+            <TextView
+                android:id="@+id/s12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_input_method_navigation_guard"
+                android:textSize="12dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginVertical="3dp"
+                android:layout_marginRight="3dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tekscs"
+            android:layout_below="@+id/tekstitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/ll5"
+            android:text="Coming Soon.."
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/rl_myActivity"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/teks_tagged_farm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Tagged Farm"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:background="@color/colorAccent"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+
+            android:textStyle="bold"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/chart"
+            android:layout_width="250dp"
+            android:layout_height="250dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

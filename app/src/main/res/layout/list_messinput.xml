@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/farmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fransiscus Caesar (01239812391)"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/alamatfarmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmer"
+            android:text="Bekasi" />
+
+        <ImageView
+            android:id="@+id/garis"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/alamatfarmer"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/rltime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imgtime"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_time" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgtime"
+                android:text="13 Februari 2018"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mortality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltime">
+
+            <ImageView
+                android:id="@+id/imgmort"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_dead" />
+
+            <TextView
+                android:id="@+id/teksmort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgmort"
+                android:text="Mortality"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/jumlahmort"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/hilang"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/hilang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:text="karung"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/satuanmort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="57dp"
+                android:layout_toRightOf="@id/jumlahmort"
+                android:text="ek" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mortality">
+
+            <ImageView
+                android:id="@+id/imgbw"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_weight" />
+
+            <TextView
+                android:id="@+id/teksbw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgbw"
+                android:text="Body Weight"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/jumlahbw"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/hilang2"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/hilang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:text="karung"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/satuanbw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="57dp"
+                android:layout_toRightOf="@id/jumlahbw"
+                android:text="gr" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inputfeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bw"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgfeed"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_feed" />
+
+                <TextView
+                    android:id="@+id/teksfeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgfeed"
+                    android:text="Feed Use"
+                    android:textColor="#000000" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toLeftOf="@+id/jumlahfeed"
+                    android:layout_toRightOf="@+id/teksfeed"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/jumlahfeed"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/satuan"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/satuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/pfeed"
+                    android:text="krg" />
+
+                <ImageView
+                    android:id="@+id/pfeed"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/ic_add" />
+
+                <ImageView
+                    android:id="@+id/mfeed"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_remove" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputfeed"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:theme="@style/ColoredButton" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

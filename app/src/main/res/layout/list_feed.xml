@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/num"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:text="Type"
+        android:id="@+id/trtyp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num"
+        android:layout_toEndOf="@id/num"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/trxcd"
+        android:text="trxcd"
+        android:layout_below="@id/trtyp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/num"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/qtyto"
+        android:layout_below="@id/trxcd"
+        android:text="1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/num"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tgl"
+        android:text="1 Januari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/qtyto"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

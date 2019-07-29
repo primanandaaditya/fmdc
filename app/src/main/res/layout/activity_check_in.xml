@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_material_light"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:src="@drawable/farmer"
+            android:layout_weight=".15"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"/>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerFarmer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/address"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15"
+            android:textSize="4dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerAddress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/marker"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip">
+            <TextView
+                android:id="@+id/lblLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp" />
+            <TextView
+                android:id="@+id/lblLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgPreview"
+        android:layout_gravity="top|bottom|center_horizontal"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgEmpty"
+        android:src="@drawable/ic_noimg"
+        android:layout_gravity="top|bottom|center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:id="@+id/textView2"
+            android:layout_weight=".3"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ztxtDesc"
+            android:singleLine="true"
+            android:inputType="text"
+            android:maxLength="20"
+            android:layout_weight=".7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_vertical">
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Photo"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_weight="0.50" />
+        <Button
+            android:id="@+id/btnAbsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/cpi"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="1">-->
+    <!--<TextView-->
+        <!--android:id="@+id/lblLocation"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:padding="15dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16dp"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnCapturePicture"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:background="@color/btn_bg"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:text="Checkin"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/imgPreview"-->
+        <!--android:layout_gravity="top|bottom|center_horizontal" />-->
+
+<!--</LinearLayout>-->

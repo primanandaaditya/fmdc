@@ -1,0 +1,285 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="false"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight=".6"
+    android:background="@color/btn_login_bg"
+    android:layout_margin="5dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/button_material_light"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="10dp"
+    tools:context="id.co.cp.mdc.fragments.OneFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:text="From :"
+        android:id="@+id/textView21"
+        android:layout_marginLeft="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:src="@drawable/farmer"
+            android:layout_weight=".15"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="3dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerFarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/marker"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip">
+            <TextView
+                android:id="@+id/lblLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp" />
+            <TextView
+                android:id="@+id/lblLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:text="To :"
+        android:id="@+id/textView22"
+        android:layout_marginLeft="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Branch"
+            android:id="@+id/textbranch"
+            android:layout_weight=".15"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerBranch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="TS"
+            android:id="@+id/textView23"
+            android:layout_weight=".15"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerTs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Farm"
+            android:id="@+id/textView24"
+            android:layout_weight=".15"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerFarmTs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Tgl Trf"
+            android:id="@+id/textView11"
+            android:layout_weight=".2"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zTxtDate3"
+            android:singleLine="true"
+            android:inputType="date"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_weight=".4" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:id="@+id/zbtnDate3"
+            android:layout_weight=".3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Feed Type"
+            android:id="@+id/textView25"
+            android:layout_weight=".18"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp" />
+
+        <Spinner
+            android:id="@+id/spinnerFeed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".35"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="3dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".26"
+            android:text="Add Feed"
+            android:id="@+id/btnAddFeed"
+            style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:fillViewport="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/FeedForm"
+            android:layout_margin="5dp">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_vertical">
+
+        <Button
+            android:id="@+id/btnSaveFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

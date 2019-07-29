@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "id.co.cp.mdc"
+        manifestPlaceholders = [manifestApplicationId          : "id.co.cp.mdc",
+                                onesignal_app_id               : "5d83fea0-3ea6-4d7b-adab-314648589060",
+                                onesignal_google_project_number: "938602676018"]
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 49//ini yang dirubah tiap update -- LAST UPDATE 2019-03-29 --
+        versionName "1.4.19"// ini yang muncul di versi -- LAST UPDATE 2019-03-29 --
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.gms:play-services-maps:11.6.2'
+    implementation 'com.google.android.gms:play-services-location:11.6.2'
+    implementation 'com.google.android.gms:play-services-gcm:11.6.2'
+    //    implementation 'com.google.android.gms:play-services:+'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.onesignal:OneSignal:3.6.5'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.onesignal:OneSignal:2.3.0'
+    implementation 'com.jjoe64:graphview:4.2.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+
+
+    def lifecycle_version = "1.1.1"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+}

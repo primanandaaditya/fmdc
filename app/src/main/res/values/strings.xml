@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">fmdc</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hint_email">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_farmer">Map</string>
+    <string name="hint_clien">Clien</string>
+    <string name="btn_farmer">Location</string>
+    <string name="btn_checkin">Check In</string>
+    <string name="app_id">123456789012</string>
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">Refresh</string>
+    <string name="btn_start_location_updates">START LOCATION UPDATES</string>
+    <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Site Survey</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_farmer">Register Farm</string>
+    <string name="nav_mytag">My Geo Tag</string>
+    <string name="nav_sinkronisasi">Sinkronisasi</string>
+    <string name="nav_monitoring">Monitoring</string>
+    <string name="nav_approve">Approval</string>
+    <string name="waiting_approval">Waiting for approval :</string>
+    <string name="farmer">Farmer</string>
+    <string name="batch">Batch</string>
+    <string name="P4">P4</string>
+    <string name="LPAB">LPAB</string>
+    <string name="Adjustment">Adjustment</string>
+    <string name="nick_mortality">Mort</string>
+    <string name="nick_feed_used">Feed used</string>
+    <string name="approval_list">Approval List</string>
+    <string name="search">Search</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Register Farm</item>
+        <item>My Geo Tag</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_update_farm">Update Farm</string>
+    <string name="action_clear_data">Clear Offline Data</string>
+    <string name="title_activity_monitoring_tab">MonitoringTab</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_mass_input">MassInputActivity</string>
+    <string name="title_activity_tes">tesActivity</string>
+    <string name="title_activity_farm_location">Farm Location</string>
+    <string name="title_activity_approve">Approve List</string>
+    <string name="title_activity_detail_lokasi">Detail Lokasi</string>
+</resources>

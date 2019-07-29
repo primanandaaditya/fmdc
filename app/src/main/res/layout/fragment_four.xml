@@ -1,0 +1,328 @@
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="false"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:background="@color/btn_login_bg"
+    android:layout_margin="5dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/button_material_light"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="10dp"
+    tools:context="id.co.cp.mdc.fragments.OneFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:src="@drawable/farmer"
+            android:layout_weight=".15"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip"/>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerFarmer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/address"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15"
+            android:textSize="4dp" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerAddress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:prompt="@string/spinner_title"
+            android:layout_weight=".7"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/marker"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:layout_weight=".15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dip">
+            <TextView
+                android:id="@+id/lblLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp" />
+            <TextView
+                android:id="@+id/lblLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/input_register_bg"
+                android:layout_marginLeft="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:visibility="gone"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tgl Catch"
+            android:id="@+id/textView11"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zTxtDate4"
+            android:singleLine="true"
+            android:inputType="date"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_weight=".15" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:id="@+id/zbtnDate"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:visibility="gone"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:id="@+id/textView2"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ztxtFnlQt"
+            android:singleLine="true"
+            android:inputType="number"
+            android:text="0"
+            android:layout_weight=".15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_weight=".1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ekor"
+            android:id="@+id/textView5"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:visibility="gone"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Weight"
+            android:id="@+id/textView10"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ztxtFnlBw"
+            android:singleLine="true"
+            android:inputType="number"
+            android:text="0"
+            android:layout_weight=".15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_weight=".1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Kg"
+            android:id="@+id/textView9"
+            android:layout_weight=".15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Avg Weight"
+            android:id="@+id/textView18"
+            android:layout_weight=".15"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_margin="3dp"
+            android:layout_gravity="bottom" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:id="@+id/ztxtAvgBw"
+            android:singleLine="true"
+            android:layout_weight=".25"
+            android:layout_gravity="bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_weight="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="gr"
+            android:id="@+id/textView20"
+            android:layout_weight=".15"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_login_bg"
+        android:layout_margin="5dp" >
+
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Close Cycle"-->
+            <!--android:id="@+id/checkFnlCtch"-->
+            <!--android:checked="false" />-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Cycle"
+                android:id="@+id/radioNC"
+                android:checked="false" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close Cycle"
+                android:id="@+id/radioCC"
+                android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nb : Close Cycle hanya boleh dilakukan jika peternak sudah tidak ada ayam dan sudah melakukan transfer feed ke peternak lain."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_vertical">
+
+        <Button
+            android:id="@+id/btnSaveFnl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/bg_main"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

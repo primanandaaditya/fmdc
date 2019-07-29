@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvNoUrut"
+            android:text="1"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/lbl_farmer"
+                    android:text="@string/farmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/tv_farmer"
+                    android:text="@string/farmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/switch_approve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="@string/batch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_batch"
+                            android:text="Batch no."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:textStyle="bold"
+                            android:text="DOC IN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:id="@+id/tv_date"
+                            android:text="Time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:text="P4 Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/tv_P4_Date"
+                    android:text="P4 Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></View>
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:text="P4 No."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="10dp"
+                    android:id="@+id/tv_P4_Number"
+                    android:text="P4 No."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:background="@color/input_login_hint"
+                    android:textAlignment="center"
+                    android:text="Keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:text="P4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:text="@string/LPAB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:text="Koreksi LPAB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:background="@color/input_login_hint"
+                    android:textAlignment="center"
+                    android:text="Mortality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:id="@+id/tv_P4_m"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_mortality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+
+
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:id="@+id/tv_LPAB_m"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_mortality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+
+                    android:paddingRight="5dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_adj_m"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_mortality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:background="@color/input_login_hint"
+                    android:textAlignment="center"
+                    android:text="Feed used"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:id="@+id/tv_P4_f"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_feed_used"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:id="@+id/tv_LPAB_f"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_feed_used"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_adj_f"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:text="@string/nick_feed_used"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
